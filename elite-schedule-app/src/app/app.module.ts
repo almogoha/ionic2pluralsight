@@ -7,7 +7,10 @@ import { GamePage, MyTeamsPage,TeamDetailPage,TeamsPage,TournamentsPage } from '
   declarations: [
     MyApp,
     MyTeamsPage,
-    TournamentsPage
+    TournamentsPage,
+    TeamsPage,
+    TeamDetailPage,
+    GamePage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -16,7 +19,10 @@ import { GamePage, MyTeamsPage,TeamDetailPage,TeamsPage,TournamentsPage } from '
   entryComponents: [
     MyApp,
     MyTeamsPage,
-    TournamentsPage
+    TournamentsPage,
+    TeamsPage,
+    TeamDetailPage,
+    GamePage
   ],
   providers: []
 })
