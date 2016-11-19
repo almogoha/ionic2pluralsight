@@ -4,12 +4,9 @@
   </ion-navbar>
 </ion-header>
 <ion-content padding>
-  <ion-list>  
-      <button ion-item (click)="itemTapped()">
-       HC Elite
-      </button>
-      <button ion-item (click)="itemTapped()">
-       Team Takeover
+  <ion-list>
+      <button ion-item *ngFor="let team of teams" (click)="itemTapped($event, team)">
+       {{team.name}}
       </button>
     </ion-list>
 </ion-content>

@@ -6,11 +6,16 @@ import {TeamDetailPage} from '../pages'
   templateUrl: 'teams.page.html'
 })
 export class TeamsPage {
-  constructor(public navCtrl: NavController) {}
+  teams = [
+    {id: 1, name: 'HC Elite'},
+    {id: 2, name: 'Team Takeover'},
+    {id: 3, name: 'DC Thunder'}
+  ];
+  constructor(private navCtrl: NavController) {}
   ionViewDidLoad() {
     console.log('Hello TeamsPage Page');
   }
-   itemTapped(){
-     this.navCtrl.push(TeamDetailPage);
+   itemTapped($event, team){
+     this.navCtrl.push(TeamDetailPage, team);
   }
 }
