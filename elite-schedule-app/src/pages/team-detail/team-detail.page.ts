@@ -7,6 +7,7 @@ import { NavController, NavParams } from 'ionic-angular';
 export class TeamDetailPage {
   team:any;
   constructor(private navCtrl: NavController, private navParams: NavParams) {
+    console.log("**nav Params:", this.navParams);
     this.team = this.navParams.data;
   }
 
