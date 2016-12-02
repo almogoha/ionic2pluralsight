@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { IonicApp, IonicModule } from 'ionic-angular';
 import { MyApp } from './app.component';
-import { GamePage, MyTeamsPage,TeamDetailPage,TeamsPage,TournamentsPage } from '../pages/pages';
+import { GamePage, MyTeamsPage,TeamDetailPage,TeamsPage,TournamentsPage, StandingsPage,TeamHomePage} from '../pages/pages';
 
 @NgModule({
   declarations: [
@@ -10,7 +10,9 @@ import { GamePage, MyTeamsPage,TeamDetailPage,TeamsPage,TournamentsPage } from '
     TournamentsPage,
     TeamsPage,
     TeamDetailPage,
-    GamePage
+    GamePage,
+    StandingsPage,
+    TeamHomePage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -22,7 +24,9 @@ import { GamePage, MyTeamsPage,TeamDetailPage,TeamsPage,TournamentsPage } from '
     TournamentsPage,
     TeamsPage,
     TeamDetailPage,
-    GamePage
+    GamePage,
+    StandingsPage,
+    TeamHomePage
   ],
   providers: []
 })
