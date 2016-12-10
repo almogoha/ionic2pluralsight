@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
 
 /*
   Generated class for the Game page.
@@ -12,11 +12,13 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'game.page.html'
 })
 export class GamePage {
-
-  constructor(public navCtrl: NavController) {}
+  game:any;
+  constructor(private navCtrl: NavController, 
+  private navParams: NavParams) {
+    this.game = this.navParams.data;
+  }
 
   ionViewDidLoad() {
-    console.log('Hello GamePage Page');
   }
 
 }

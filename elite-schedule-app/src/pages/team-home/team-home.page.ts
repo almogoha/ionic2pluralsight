@@ -18,4 +18,8 @@ standingsTab = StandingsPage;
     console.log('Hello TeamHomePage Page');
   }
 
+  goHome(){
+    this.navCtrl.popToRoot();
+  }
+
 }
